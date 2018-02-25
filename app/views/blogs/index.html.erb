@@ -1,0 +1,15 @@
+<h1>List of blogs</h1><%= link_to 'create new blog', '/blogs/new' %>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Content</th></th>
+  </tr>
+
+<% @blogs.each do |blog| %>
+  <tr>
+    <td><%= blog.title %></td>
+    <td><%= blog.content %></td>
+  </tr>
+<% end %>
+</table>
